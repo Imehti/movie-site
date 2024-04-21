@@ -7,9 +7,14 @@ interface Movie {
   handleGetMovieInfo: any;
 }
 
+interface MovieDef{
+  Poster:string,
+  Title:string
+}
+
 function MovieList({ handleGetMovieInfo }: Movie) {
-  const [firstList, setFirstList] = useState([]);
-  const [secondList, setSecondList] = useState([]);
+  const [firstList, setFirstList] = useState<MovieDef[]>([]);
+  const [secondList, setSecondList] = useState<MovieDef[]>([]);
   const [error, setError] = useState("");
   const [isLoading, setLoading] = useState(false);
   const skeletons = [1, 2, 3, 4, 5, 6];
