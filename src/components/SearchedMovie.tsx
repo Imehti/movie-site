@@ -1,6 +1,8 @@
 import { useState } from "react";
 
-function SearchedMovie(movieDetails) {
+
+
+function SearchedMovie(movieDetails:any) {
   const [moreDetails, setMoreDetails] = useState(false);
   const movie = movieDetails.movieDetails;
   let genre = movie.Genre;
