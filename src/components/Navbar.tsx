@@ -28,9 +28,10 @@ function Navbar({
     <>
       <nav className="sm:grid grid-cols-2 grid-rows-2 w-full text-white h-1/6">
         <div className="m-2">
-          <span className="sm:pl-1">LOGO</span>
+        
+          {/* <span className="sm:pl-1">LOGO</span>
           <span className="sm:pl-7 pl-2"><a href="">Home</a></span>
-          <span className="sm:pl-4 pl-2"><a href="">WatchList</a></span>
+          <span className="sm:pl-4 pl-2"><a href="">WatchList</a></span> */}
         </div>
         {/* <ul className="flex flex-row justify-center sm:m-2 relative sm:bottom-0 bottom-7 right-8 sm:right-0"> 
           <li className="">
@@ -54,17 +55,18 @@ function Navbar({
             onChange={(e) => {
               handleSearchedMovie(e.target.value);
             }}
-            className="text-black rounded-xl border border-border w-1/3 p-1 bg-white shadow-2xl"
+            className="text-black rounded-xl border border-border sm:w-1/2 w-full mt-8 mx-3 sm:mx-0 sm:mt-0 p-1 bg-white shadow-2xl"
             type="text"
             placeholder="search..."
           />
           <svg
+          
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
             viewBox="0 0 24 24"
             strokeWidth={1.5}
             stroke="currentColor"
-            className="w-6 h-6"
+            className="w-6 h-6 mt-8 mr-4 sm:mt-0 sm:mr-0"
           >
             <path
               strokeLinecap="round"
